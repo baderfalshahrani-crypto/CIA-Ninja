@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CIA Ninja is a responsive CIA Exam preparation platform for working internal auditors with study units, flashcards, quizzes, mock exams, planner, bookmarks, and weak-area review." />
+  <meta name="theme-color" content="#0b0b0f" />
+  <title>CIA Ninja | CIA Exam Study Dojo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+  <div class="bg-pattern" aria-hidden="true"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">忍</div>
+      <div>
+        <strong>CIA Ninja</strong>
+        <span>Audit Study Dojo</span>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#/dashboard" data-route="dashboard">Dashboard</a>
+      <a href="#/study" data-route="study">Study Dojo</a>
+      <a href="#/flashcards" data-route="flashcards">Flashcards</a>
+      <a href="#/practice" data-route="practice">Practice Questions</a>
+      <a href="#/mocks" data-route="mocks">Mock Exams</a>
+      <a href="#/planner" data-route="planner">Study Planner</a>
+      <a href="#/weak" data-route="weak">Weak Areas</a>
+      <a href="#/bookmarks" data-route="bookmarks">Bookmarks</a>
+      <a href="#/resources" data-route="resources">Resources</a>
+      <a href="#/profile" data-route="profile">Profile</a>
+    </nav>
+    <div class="sidebar-card">
+      <span class="label">Ninja Focus</span>
+      <strong id="sidebarRank">Apprentice</strong>
+      <p>Complete missions, answer questions, and sharpen weak areas.</p>
+    </div>
+  </aside>
+
+  <main class="shell">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+      <div>
+        <p class="eyebrow">Premium CIA Exam Prep</p>
+        <h1 id="pageTitle">Dashboard</h1>
+      </div>
+      <div class="top-actions">
+        <span class="pill" id="xpPill">0 XP</span>
+        <span class="pill gold" id="streakPill">0 day streak</span>
+      </div>
+    </header>
+    <section id="app" class="app" aria-live="polite"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
